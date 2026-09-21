@@ -1,9 +1,9 @@
 site_name: ゆんのブログ
-site_url: https://yun-cpp-v.github.io/yun-site/
+site_url: https://yun-cpp-v.github.io/blog/
 site_dir: ../build/site
 
-repo_url: https://github.com/yun-cpp-v/yun-site
-repo_name: yun-cpp-v/yun-site
+repo_url: https://github.com/yun-cpp-v/blog
+repo_name: yun-cpp-v/blog
 
 plugins:
   - search
