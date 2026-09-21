@@ -1,4 +1,4 @@
-name: Deploy MkDocs
+name: Deploy Properdocs
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Install MkDocs
+      - name: Install Properdocs
         run: |
           pip install properdocs mkdocs-material mkdocs-awesome-pages-plugin
 
