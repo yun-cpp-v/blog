@@ -1,0 +1,33 @@
+name: Deploy MkDocs
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/site.yml"
+      - "site/**"
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install MkDocs
+        run: |
+          pip install properdocs mkdocs-material mkdocs-awesome-pages-plugin
+
+      - name: Deploy documentation
+        run: properdocs gh-deploy --force
+        working-directory: site
