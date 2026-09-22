@@ -1,3 +1,7 @@
+---
+description: C++とボイスロイドのひと
+---
+
 # ゆんについて
 
 ![アイコン](<https://avatars.githubusercontent.com/u/145850987?size=128>){align=right}

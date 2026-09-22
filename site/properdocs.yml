@@ -9,6 +9,7 @@ plugins:
   - search
   - awesome-pages
 
+
 theme:
   name: material
   language: ja
@@ -19,6 +20,7 @@ theme:
     - navigation.tabs
 
 markdown_extensions:
+  - meta
   - admonition
   - def_list
   - attr_list
