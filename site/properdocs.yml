@@ -1,6 +1,7 @@
 site_name: ゆんのブログ
 site_url: https://yun-cpp-v.github.io/blog/
 site_dir: ../build/site
+site_description: dummy site description
 
 repo_url: https://github.com/yun-cpp-v/blog
 repo_name: yun-cpp-v/blog
