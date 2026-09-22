@@ -25,17 +25,16 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Install Properdocs
-        run: |
-          pip install properdocs mkdocs-material mkdocs-awesome-pages-plugin
-
       - name: Install Dependencies
         run: |
-          pip install cairosvg
+          pip install Pillow sudachipy sudachidict_core
 
       - name: Build OGP
         run: |
           python ./scripts/generate_ogp.py
+      - name: Install Properdocs
+        run: |
+          pip install properdocs mkdocs-material mkdocs-awesome-pages-plugin
 
       - name: Deploy documentation
         run: properdocs gh-deploy --force
