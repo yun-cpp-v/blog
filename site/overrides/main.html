@@ -3,6 +3,7 @@
 {% block extrahead %}
 {{ super() }}
 
+{% if page %}
 {% set ogp_image = "https://yun-cpp-v.github.io/blog/assets/ogp/" ~ (page.url.rstrip('/') or 'index') ~ ".png" %}
 
 <meta property="og:type" content="website">
@@ -16,5 +17,6 @@
 <meta name="twitter:title" content="{{ page.title }}">
 <meta name="twitter:description" content="{{ config.site_description }}">
 <meta name="twitter:image" content="{{ ogp_image }}">
+{% endif %}
 
 {% endblock %}
