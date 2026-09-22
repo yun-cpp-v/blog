@@ -9,7 +9,6 @@ repo_name: yun-cpp-v/blog
 plugins:
   - search
   - awesome-pages
-  - ogp
 
 theme:
   name: material
@@ -22,7 +21,6 @@ theme:
     - navigation.tabs
 
 markdown_extensions:
-  # - meta
   - admonition
   - def_list
   - attr_list
