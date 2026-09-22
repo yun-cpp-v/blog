@@ -40,4 +40,3 @@ jobs:
 
       - name: Deploy documentation
         run: properdocs gh-deploy --force
-        working-directory: site
