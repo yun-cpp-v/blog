@@ -4,8 +4,8 @@ import cairosvg
 
 ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "site" / "docs"
+TEMPLATE = ROOT / "scripts" / "ogp-template.svg"
 OUTPUT = DOCS / "assets" / "ogp"
-TEMPLATE = "ogp-template.svg"
 
 
 def get_title(markdown):
