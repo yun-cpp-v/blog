@@ -4,7 +4,7 @@ description: C++とボイスロイドのひと
 
 # ゆんについて
 
-![アイコン](<https://yun-cpp-v.github.io/blog/assets/images/yun-icon.png>){align=right}
+![アイコン](<https://yun-cpp-v.github.io/blog/assets/images/yun-icon.png>){align=right width="128"}
 
 C++とボイスロイドのひと．
 

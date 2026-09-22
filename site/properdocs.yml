@@ -1,7 +1,8 @@
 site_name: ゆんのブログ
 site_url: https://yun-cpp-v.github.io/blog/
 site_dir: ../build/site
-site_description: ゆんのひとりごとを載せるブログ
+site_description: Twitterに書くには長すぎる，ゆんのひとりごとを載せるブログ．
+
 
 repo_url: https://github.com/yun-cpp-v/blog
 repo_name: yun-cpp-v/blog
