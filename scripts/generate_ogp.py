@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw, ImageFont
 from format_title import format_title
 
 ROOT = Path(__file__).resolve().parent.parent
-DOCS = ROOT / "site" / "docs"
+DOCS = ROOT / "docs"
 TEMPLATE = ROOT / "scripts" / "ogp-template.png"
 OUTPUT = DOCS / "assets" / "ogp"
 
