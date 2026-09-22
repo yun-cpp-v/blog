@@ -11,6 +11,7 @@ plugins:
 
 
 theme:
+  custom_dir: overrides
   name: material
   language: ja
   palette:
