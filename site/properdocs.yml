@@ -8,10 +8,10 @@ repo_name: yun-cpp-v/blog
 plugins:
   - search
   - awesome-pages
-
+  - social
 
 theme:
-  custom_dir: overrides
+  # custom_dir: overrides
   name: material
   language: ja
   palette:
@@ -21,7 +21,8 @@ theme:
     - navigation.tabs
 
 markdown_extensions:
-  - meta
+
+  # - meta
   - admonition
   - def_list
   - attr_list
