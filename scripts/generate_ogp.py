@@ -1,11 +1,9 @@
-# This code is written by ChatGPT
-
 from pathlib import Path
 import shutil
 
 
 ROOT = Path(__file__).resolve().parent.parent
-DOCS = ROOT / "docs"
+DOCS = ROOT / "site" / "docs"
 SOURCE = ROOT / "scripts" / "dummy.png"
 OUTPUT = DOCS / "assets" / "ogp"
 
@@ -17,17 +15,9 @@ def main():
     for markdown in DOCS.rglob("*.md"):
         relative = markdown.relative_to(DOCS)
 
-        # index.md はディレクトリ名を使う
-        if relative.name == "index.md":
-            name = relative.parent.as_posix()
-        else:
-            name = relative.with_suffix("").as_posix()
+        name = relative.with_suffix("").as_posix()
 
-        # docs/index.md → index.png
-        if not name:
-            name = "index"
-
-        filename = name.replace("/", "_") + ".png"
+        filename = name + ".png"
         destination = OUTPUT / filename
 
         destination.parent.mkdir(parents=True, exist_ok=True)

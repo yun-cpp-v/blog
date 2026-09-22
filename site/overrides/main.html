@@ -3,7 +3,7 @@
 {% block extrahead %}
 {{ super() }}
 
-{% set ogp_image = "https://yun-cpp-v.github.io/blog/assets/ogp/" ~ (page.url.rstrip('/').replace('/', '_') or 'index') ~ ".png" %}
+{% set ogp_image = "https://yun-cpp-v.github.io/blog/assets/ogp/" ~ (page.url.rstrip('/') or 'index') ~ ".png" %}
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ page.title }}">
