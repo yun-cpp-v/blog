@@ -4,7 +4,7 @@
 {{ super() }}
 
 {% if page %}
-{% set ogp_image = "https://yun-cpp-v.github.io/blog/assets/ogp/" ~ (page.url.rstrip('/') or 'index') ~ ".png" %}
+{% set ogp_image = "https://yun-cpp-v.github.io/yun-blog/assets/ogp/" ~ (page.url.rstrip('/') or 'index') ~ ".png" %}
 {% set description = page.meta.description | default(config.site_description) %}
 
 <meta property="og:type" content="article">
